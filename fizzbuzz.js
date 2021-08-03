@@ -1,5 +1,9 @@
 function fizzbuzz(num) {
 
+    if (typeof num !== 'number') {
+        return "Error: the argument must be a number";
+    }
+
     const divisible=(divisor,num)=>num%divisor===0;
 
     if (num===0) {
